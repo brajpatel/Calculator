@@ -305,3 +305,22 @@ button:hover {
     --decimal: var(--purple-dark);
     --equals: var(--green-dark);
 }
+
+/* ===== SIMPLE MEDIA QUERY ===== */
+@media (max-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .theme-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .credit-container {
+        position: relative;
+    }
+}
