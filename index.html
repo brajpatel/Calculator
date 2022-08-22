@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b72f458627.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://pngimg.com/uploads/calculator/calculator_PNG102230.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body class="light">
+
+    <div class="theme-container">
+        <div id="toggle-theme" class="toggle-theme">
+            <i id="sun" class="fa-solid fa-cloud-sun sun"></i>
+            <i id="moon" class="fa-solid fa-cloud-moon moon"></i>
+            <p>
+                <span id="light-text" class="light-text">Light</span>
+                <span id="dark-text" class="dark-text">Dark</span>
+                Theme
+            </p>
+        </div>
+    </div>
+
+    <div id="calculator" class="calculator">
+
+        <div id="display" class="display">
+            <div id="last-screen" class="last-screen"></div>
+            <div id="current-screen" class="current-screen">0</div>
+        </div>
+
+        <div id="delete-btns" class="delete-btns">
+            <button id="clear" class="clear">Clear</button>
+            <button id="delete" class="delete">Delete</button>
+        </div>
+
+        <div id="main-btns" class="main-btns">
+            <button id="7" class="btn number" data-number>7</button>
+            <button id="8" class="btn number" data-number>8</button>
+            <button id="9" class="btn number" data-number>9</button>
+            <button id="add" class="btn operator" data-operator>+</button>
+
+            <button id="4" class="btn number" data-number>4</button>
+            <button id="5" class="btn number" data-number>5</button>
+            <button id="6" class="btn number" data-number>6</button>
+            <button id="subtract" class="btn operator" data-operator>-</button>
+
+            <button id="1" class="btn number" data-number>1</button>
+            <button id="2" class="btn number" data-number>2</button>
+            <button id="3" class="btn number" data-number>3</button>
+            <button id="multiply" class="btn operator" data-operator>x</button>
+
+            <button id="decimal" class="btn decimal">.</button>
+            <button id="0" class="btn number" data-number>0</button>
+            <button id="equals" class="btn equals">=</button>
+            <button id="divide" class="btn operator" data-operator>/</button>
+        </div>
+
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
